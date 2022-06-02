@@ -9,10 +9,4 @@ app = FastAPI()
 
 @app.get("/credits")
 async def credits():
-    return {
-        "Developers": [
-            'Daniel Polo',
-            'Carlos Rodriguez'
-        ],
-        'Database': os.environ.get('DATABASE_URL')
-    }
+    return {"Developers": ['Daniel Polo', 'Carlos Rodriguez']}
